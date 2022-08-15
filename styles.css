@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+canvas {
+  border: white solid 3px;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  touch-action: none;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+  height: 400px;
+  width: 350px;
+  background-color: transparent;
+  touch-action: none;
+}
+.saveBtn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  font-size: 1rem;
+  padding: 1px 10px;
+  cursor: pointer;
+}
+.clearBtn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 15px;
+  left: 120px;
+  font-size: 1rem;
+  padding: 1px 10px;
+  cursor: pointer;
+}
+.clearBtn:hover,
+.saveBtn:hover {
+  background-color: red;
+}
+.slider1 {
+  position: absolute;
+  bottom: 15px;
+  left: 200px;
+  width: 100px;
+  cursor: pointer;
+}
