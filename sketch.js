@@ -2,7 +2,6 @@ let d;
 let sw;
 let symmetry = 6;
 let clearButton;
-let saveButton;
 let slider;
 let hue = 0;
 let offset = 0;
@@ -15,10 +14,6 @@ function setup() {
   background(0);
   angleMode(DEGREES);
   colorMode(HSB, 255, 255, 255);
-  saveButton = createButton("save");
-  saveButton.parent("wrapper");
-  saveButton.mousePressed(saveSnowflake);
-  saveButton.addClass("saveBtn");
   clearButton = createButton("clear");
   clearButton.parent("wrapper");
   clearButton.mousePressed(clearCanvas);
@@ -26,9 +21,6 @@ function setup() {
   slider = createSlider(1, 32, 4, 0.1);
   slider.parent("wrapper");
   slider.addClass("slider1");
-}
-function saveSnowflake() {
-  save("snowflake.png");
 }
 
 function clearCanvas() {

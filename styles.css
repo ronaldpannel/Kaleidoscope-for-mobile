@@ -41,26 +41,36 @@ canvas {
 }
 .clearBtn {
   background-color: transparent;
-  color: white;
+  color:white;
   border: 2px solid white;
   border-radius: 20px;
   position: absolute;
-  bottom: 15px;
-  left: 120px;
+  bottom: 5px;
+  left: 20px;
   font-size: 1rem;
   padding: 1px 10px;
   cursor: pointer;
 }
 .clearBtn:hover,
-.saveBtn:hover,
-.colorBtn:hover {
+.saveBtn:hover {
   background-color: red;
 }
 .slider1 {
   position: absolute;
-  bottom: 15px;
-  left: 200px;
-  width: 100px;
+  bottom: 5px;
+  left: 250px;
+  width: 75px;
   cursor: pointer;
   border: white 2px solid;
+}
+.slider1::after{
+   content: "Line Weight: ";
+   color:white;
+   display: block;
+   font-size: 1.1rem;
+   position: absolute;
+   left: -110px;
+   bottom: 0px;
+   z-index: 50;
+
 }
