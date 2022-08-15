@@ -37,6 +37,7 @@ canvas {
   font-size: 1rem;
   padding: 1px 10px;
   cursor: pointer;
+  display: none;
 }
 .clearBtn {
   background-color: transparent;
@@ -51,7 +52,8 @@ canvas {
   cursor: pointer;
 }
 .clearBtn:hover,
-.saveBtn:hover {
+.saveBtn:hover,
+.colorBtn:hover {
   background-color: red;
 }
 .slider1 {
@@ -60,4 +62,5 @@ canvas {
   left: 200px;
   width: 100px;
   cursor: pointer;
+  border: white 2px solid;
 }
